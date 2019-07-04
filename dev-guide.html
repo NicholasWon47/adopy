@@ -1,0 +1,306 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Developer’s Guide &mdash; ADOpy 0.3.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="_static/js/custom.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Psychometric Function Estimation" href="examples/psi.html" />
+    <link rel="prev" title="Getting Started" href="getting-started.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> ADOpy
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.3.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="getting-started.html">Getting Started</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Developer’s Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#setup">Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#writing-documentation">Writing documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#branch-management">Branch management</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="examples/psi.html">Psychometric Function Estimation</a></li>
+</ul>
+<p class="caption"><span class="caption-text">API Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="api/base.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">adopy.base</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/tasks/cra.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">adopy.tasks.cra</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/tasks/dd.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">adopy.tasks.dd</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/tasks/psi.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">adopy.tasks.psi</span></code></a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">ADOpy</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Developer’s Guide</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="developer-s-guide">
+<h1>Developer’s Guide<a class="headerlink" href="#developer-s-guide" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="setup">
+<h2>Setup<a class="headerlink" href="#setup" title="Permalink to this headline">¶</a></h2>
+<p>First, you should clone the GitHub repository and checkout the develop branch.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git clone git@github.com:adopy/adopy.git
+<span class="nb">cd</span> adopy
+git checkout develop
+</pre></div>
+</div>
+<p>To manage a virtual environment for development, we uses <a class="reference external" href="https://docs.pipenv.org/en/latest/">Pipenv</a>. Pipfile on
+the repository describes which packages to install for a virtual environment.
+You can create a virtual environment by running the command below:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Install default and develop packages while skipping Pipfile.lock</span>
+pipenv install --dev --skip-lock
+</pre></div>
+</div>
+<p>Now you can activate the installed virtual environment. Code blocks on later
+sections assume this environment activated.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Activate the virtual environment</span>
+pipenv shell
+</pre></div>
+</div>
+</div>
+<div class="section" id="writing-documentation">
+<h2>Writing documentation<a class="headerlink" href="#writing-documentation" title="Permalink to this headline">¶</a></h2>
+<p>The documentation is generated based on <a class="reference external" href="http://www.sphinx-doc.org/en/master/">Sphinx</a>. Sphinx provides its rich
+features using <a class="reference external" href="http://docutils.sourceforge.net/docs/user/rst/quickstart.html">reStructuredText</a> files for its markup language. Thus, to get
+benefits from Sphinx, this documentation website is created from
+reStructuredText sources on <code class="docutils literal notranslate"><span class="pre">/docs/source</span></code> directory.</p>
+<p>Basically, the official website (<a class="reference external" href="https://adopy.org">https://adopy.org</a>) is automatically generated
+from documentations in the Python codes on <code class="docutils literal notranslate"><span class="pre">/adopy</span></code> and reStructuredText
+files (<code class="docutils literal notranslate"><span class="pre">*.rst</span></code>) on <code class="docutils literal notranslate"><span class="pre">/docs/source</span></code>, in <code class="docutils literal notranslate"><span class="pre">master</span></code> branch of the
+repository. In other words, the documentations shown in the website are for the
+stable version of ADOpy in <code class="docutils literal notranslate"><span class="pre">master</span></code> branch.</p>
+<p>Using <code class="docutils literal notranslate"><span class="pre">sphinx-autobuild</span></code>, you can build the documentation and test it by
+yourself. It can run a web server for documentation on <a class="reference external" href="http://localhost:8000">http://localhost:8000</a>,
+as described below.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Go to /docs directory</span>
+<span class="nb">cd</span> docs
+
+<span class="c1"># On Windows</span>
+livehtml.bat
+
+<span class="c1"># On macOS or Linux</span>
+make livehtml
+</pre></div>
+</div>
+</div>
+<div class="section" id="branch-management">
+<h2>Branch management<a class="headerlink" href="#branch-management" title="Permalink to this headline">¶</a></h2>
+<p>The basic process of ADOpy development follows the <a class="reference external" href="https://nvie.com/posts/a-successful-git-branching-model/">Gitflow workflow by Vincent
+Driessen</a>, which holds two main branches: <code class="docutils literal notranslate"><span class="pre">master</span></code> and <code class="docutils literal notranslate"><span class="pre">develop</span></code>.
+Only an exception is that we use <code class="docutils literal notranslate"><span class="pre">feature/*</span></code>, <code class="docutils literal notranslate"><span class="pre">hotfix/*</span></code>, or <code class="docutils literal notranslate"><span class="pre">release/*</span></code>
+instead of <code class="docutils literal notranslate"><span class="pre">feature-*</span></code>, <code class="docutils literal notranslate"><span class="pre">hotfix-*</span></code> or <code class="docutils literal notranslate"><span class="pre">release-*</span></code>.
+There are a bunch of great resources about Gitflow and we require you to read
+at least one of them before proceeding.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://nvie.com/posts/a-successful-git-branching-model/">The original post by Vincent Driessen</a></p></li>
+<li><p><a class="reference external" href="https://ko.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow">Gitflow Workflow - Atlassian Git Tutorial</a></p></li>
+<li><p><a class="reference external" href="https://leanpub.com/git-flow/read">Read Git Flow | Leanpub</a></p></li>
+<li><p><a class="reference external" href="https://danielkummer.github.io/git-flow-cheatsheet/index.html">git-flow cheatsheet</a></p></li>
+<li><p><a class="reference external" href="https://zellwk.com/blog/git-flow/">Managing your Git branches with Git Flow | Zell Liew</a></p></li>
+<li><p><a class="reference external" href="https://jeffkreeftmeijer.com/git-flow/">Using git-flow to automate your git branching workflow</a></p></li>
+</ul>
+<p>If you want to contribute to ADOpy, you can start with forking the ADOpy
+repository in the GitHub. Before you start writing a code, please make a new
+issue for what you want to do. Then, following the Gitflow, you should make a
+proper branch to work with. We only allow feature branches for who is not
+authorized. If your job is done, you can make a pull request on the ADOpy
+repository and let us review it before merging it.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="examples/psi.html" class="btn btn-neutral float-right" title="Psychometric Function Estimation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="getting-started.html" class="btn btn-neutral float-left" title="Getting Started" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, ADOpy developers
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+    <!-- Theme Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-71789812-2', 'auto');
+    ga('send', 'pageview');
+    </script>
+
+    
+   
+
+</body>
+</html>
